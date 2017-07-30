@@ -1,0 +1,5 @@
+2. Pickling serialized python objects. Because of this, there is no way to know what 
+kind of batch commnds are in the pickler, the pickle can contain shell code that
+can harm your computer.
+
+3.

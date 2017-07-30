@@ -1,0 +1,16 @@
+Sheila Robles
+Assignment 2 Part 2
+ 
+Question 1:
+For the code provided, the default list in the function, lst, is given
+a space in memory when the function, func, is run without a parameter. 
+Because of this, when func is called multiple times, it will append the 
+the list that was created during the first run. Ocer time, if run too much
+this can cause major problems with memory space which could probably crash
+the computer. To prevent this one could avoid defining functions in which 
+the parameter passed is permanent rather than temporary and constantly update
+python as new versions become available. 
+
+Question 2:
+Lambda functions are syntactically limited to single expression, meaning they
+can only handle single basic functionalities.

@@ -1,0 +1,33 @@
+#Sheila Robles
+#Assignment 3 Problem 3
+#Python Version 3.0.1
+
+import argparse as arg
+import linecache as cache
+import os.path
+
+parser = arg.ArgumentParser(description="Prints the differences/similarities between" + 
+                                        " two files")
+
+parser.add_argument('File1', type=file, help='The first file', required=True)
+parser.add_argument('File2', type=file, help='The second file', required=True)
+parser.add_argument('-o', '--output', type=file, help='The name of the file to print the results to')
+parser.add_argument('-s', '--similarities', type=str, help='If this is used will print only the similiarities')
+parser.add_argument('-d', '--differences', type=str, help='If this is used will print only the differences')
+parser.add_argument('-h', '--html-out', type=str, help='Accept a file name and output the result to an html document')
+
+arguments = parser.parse_args()
+file1 = arguments.File1
+file2 = arguments.File2
+output = arguments.output
+sims = arguments.similarities
+diffs = arguments.differences
+html_filename = arguments.html-out
+
+for filepath in files_to_open:
+    print "FILE: {}".format(filepath)
+    if os.path.exists(filepath) and os.path.isfile(filepath):
+        with open(filepath, 'r') as tailed_file:
+            filesize = len(tailed_file.readlines())
+        for i in range(lines_to_print):
+            print cache.getline(filepath, i).rstrip('\n')   

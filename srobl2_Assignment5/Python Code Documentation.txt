@@ -1,0 +1,20 @@
+----TestBankCreator.py----
+This code will work okay to create a workable CSV. 
+
+Known Problems:
+ -There is currently no test to see if the user is inputting the
+  correct values once their in the question portions of input
+ -The solution types could be refined so it will only accept a, b, c, d, etc.
+  as solutions for multiple choice, T or F as solutions for the True and False
+  questions, and provide a possible solution rather than an exact one for the 
+  open ended. This will make "grading" the quizzes easier.
+
+
+----QuizCreator.py----
+Information is stored fine
+
+Known Problems: 
+ -Input types for the answers could be restristricted to a,b,c,d etc as noted
+  above. 
+ -Once all the data is inputted, it could be displayed with an autograde feature
+  that will show how many questions user got right and wrong

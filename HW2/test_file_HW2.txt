@@ -1,0 +1,5 @@
+This is a file containing a phrase for my program to practice counting letters. 
+It will be read by the program. The program will iterate through this file letter
+by letter and count the frequency of the letters being used.
+
+At the end of my program, there should be dictionary containing all of this information.

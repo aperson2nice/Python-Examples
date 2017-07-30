@@ -1,0 +1,38 @@
+Question 1:
+ord() takes a single character string and returns the integer vaue that
+corresponds to is unicode value if it's a unicode object or the value
+of the byte if it's an 8-bit string.
+Working: ord("H") returns 72
+Not Working: ord("Hi") returns an error because "Hi" is not single character
+ string.
+ 
+
+Question 2:
+range(start, stop, step) takes one, two, or three integer values as arguements.
+one arguement: will print a list of numbers from 0, to the arguements value
+two arguments: will print a list of number from the first arguements value to the second arguments value
+    not including the second arguments value
+three arguements: will print a list of number from the first arguements value to the second arguments value
+    not including the second arguments value in increments of the third arguements value
+Working: range(6) returns [1,2,3,4,5,6]
+Not Working: range(6.) returns an error because the arguements need to be int types	
+
+	
+Question 3:
+map(function,iterable) 
+map() will apply a function to every item of an iterable object. 
+(It seems like this would have been nice to use on extra credit quiz question.)
+Working: map(str,[1,4,7]) returns ["1","4","7"]
+Not Working: map(str(),[1,4,7]) returns an error because only the name of the 
+method is passed, not the function call for the method
+
+
+Quesion 4: You can add python to the environment variable PATH using a ;. 
+Once you do this, you can just call your program file.py without the word python in front.
+
+
+Question 5: An iterable type is an object that has the ability to return part of itself one by one,
+like lists, tuples, and strings. Specifically, they have functions available to them like get() and next().
+Example: 
+separator = " | "
+separator.join(["this","is","joined"]) ---> returns "this | is | joined"
