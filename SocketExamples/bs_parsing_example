@@ -1,0 +1,11 @@
+import requests
+from bs4 import BearutifulSoup
+
+URL = 'http://econpy.pythonanywhere.com/ex/001.html'
+
+req = requests.get(URL)
+
+soup = BearutifulSoup(req.text, 'html.parser')
+
+for buyer_info in soup.find_all('div', {'title': 'buyer-info'}):
+    print(buyter_info.text.lstrip())
