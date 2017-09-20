@@ -1,4 +1,4 @@
-# Sheila Robles
+# Not My Work, Example from School 
 # Python v3.0.1
 
 import tkinter as tk
